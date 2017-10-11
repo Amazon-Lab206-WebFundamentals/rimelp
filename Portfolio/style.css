@@ -1,18 +1,108 @@
 #wrapper{
-    background-color: #F1E9E9;
+    background-color: #F8F2F2;
     width: 970px;
-   }
-.header1{
+}
+.header div{
     display: inline-block;
+    margin: 0px;
 }
-.header2{
-    display: inline-block; 
-    float: right; 
+.header h1{
+    margin: 0px 10px;
 }
-#mainwrap{
-    background-color: #3D033D;
-    padding: 15px;
+.header h2{
+    margin: 0px;
 }
-.bioimg{
+.header div:last-child{
+    margin-left: 400px;
+}
+.mainwrap{
+    background: linear-gradient(to right, #140014, #6E5374, #140014);
+    padding: 20px;
+}
+.main div:last-child{
+    margin-right: -10px;
+}
+.bio div{
     display: inline-block;
+    vertical-align: top;
+}
+.bio h2{
+    background: linear-gradient(#A8A6A6, #797878, #A8A6A6);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 6px;
+    color: white;
+}
+.bio p{
+    background: linear-gradient(to right, white, #dacbd9 );
+    margin-top: 0px;
+    height: 220px;
+    width: 484px;
+    padding: 6px;
+}
+.bio img{
+    border: solid 5px gray;
+    margin-right: 20px;
+    width: 400px;
+}
+.link{
+    color: black;
+}
+.main div{
+    display:inline-block;
+    width: 293px;
+    vertical-align: top;
+    margin-right: 20px;
+}
+.main p{
+    height: 140px;
+    background: linear-gradient(to right, white, #dacbd9 );
+    margin-top: -5px;
+    margin-bottom: 0px;
+    padding: 5px;
+}
+.main h2{
+    background: linear-gradient(#A8A6A6, #797878, #A8A6A6);
+    padding: 6px;
+    margin: 0px;
+    color: white;
+}
+.main img{
+    width: 293px;
+}
+.main h3{
+    background: linear-gradient(#A8A6A6, #797878, #A8A6A6);
+    padding: 6px;
+    margin: 0px;
+    color: white;
+}
+.technologies{
+    width: 290px;
+    background: linear-gradient(to right, white, #dacbd9 );
+    margin: 0px;
+}
+.technologies img{
+    width: 40px;
+    margin: 5px;
+}
+.technologies h4{
+    color: white;
+    background-color: rgb(64, 125, 97);
+    padding: 5px;
+    border: solid 2px black;
+    border-radius: 10px;
+    margin: 10px 80px;
+    text-align: center;
+    box-shadow: 5px 5px 5px #888787;
+}
+.footer{
+    text-align: center;
+    padding: 5px;
+    font-size: 1.2em;
+}
+.footer img{
+    width:15px;
+}
+.footer a{
+    color: black;
 }
