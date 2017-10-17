@@ -1,0 +1,144 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+#wrapper{
+    width: 980px;
+    background-color: rgb(25, 25, 25);
+    padding: 10px;
+}
+.header img{
+    display: inline-block;
+    margin-right: 550px;
+}
+.header h3{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+}
+.ltgrey{
+    color: rgb(207, 207, 200);
+}
+.nav li{
+    display: inline-block;
+    margin: 5px;
+    height: 50px;
+    padding: 10px;
+    border-right: solid 2px #1F1E1E;
+    box-shadow: 3px 3px 3px grey;
+}
+.nav li:last-child{
+    padding-right: 300px;
+}
+.nav ul{
+    color: rgb(163, 163, 163);
+    background-color: rgb(70, 70, 70);
+    width: 975px;
+    height: 50px;
+    font-weight:  bold;
+}
+.midtop{
+    border-top: solid 4px grey;
+    width: 940px;
+    margin-top: 0px;
+    vertical-align: top;
+    background-color: rgb(26,26,26);
+    height: 125px;
+    padding: 20px;
+}
+.midtop img{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+}
+.midtop div{
+    display: inline-block;
+    width: 160px;
+    margin: 10px;
+}
+.midtop h3{
+    color: #F7B646;
+}
+.midtop p{
+    color: rgb(207, 207, 200);
+    font-size: .9em;
+}
+.midbottom{
+    padding: 15px;
+    background: repeating-linear-gradient(
+        -55deg,
+        #222,
+        #222 3px,
+        #333 3px,
+        #333 5px
+      );
+    color: rgb(207, 207, 200);
+    height: 120px;
+    width: 950px;
+}
+.bottomleft{
+    display: inline-block;
+    width: 750px;
+}
+.bottomleft h2{
+    margin: 10px 0px;
+}
+.bottomleft p{
+    font-size: .9em;
+}
+button{
+    display: inline-block;
+    background-color:#F7B646;
+    color: rgb(243, 243, 236);
+    border-radius: 5px;
+    border-width: 0px;
+    padding: 12px 30px;
+    box-shadow: 2px 2px 2px black;
+    margin-left: 40px;
+    font-weight: bold;
+    vertical-align: top;
+    margin-top: 40px;
+}
+.bottom{
+    padding: 20px;
+    background-color: rgb(26, 26, 26);
+    vertical-align: top;
+}
+.bottomheader{
+    padding: 10px;
+}
+.bottomheader h3{
+    color: rgb(207, 207, 200);
+    display: inline-block;
+    margin-right: 695px
+}
+.bottomheader p{
+    color: #F7B646;
+    display: inline-block;
+    vertical-align: top;
+}
+.images img{
+    border: solid 4px grey;
+    margin: 6px;
+}
+.bottomcontent div{
+    display: inline-block;
+    width: 215px;
+    margin: 7px;
+    vertical-align: top;
+}
+.bottomcontent h4{
+    color: #F7B646;
+    margin-bottom: 5px;
+}
+.bottomcontent p{
+    color: rgb(207, 207, 200);
+}
+footer {
+    color: rgb(207, 207, 200);
+    text-align: right;
+    font-size: .8em;
+    background-color: rgb(26, 26, 26);
+    padding-right: 15px;
+}
