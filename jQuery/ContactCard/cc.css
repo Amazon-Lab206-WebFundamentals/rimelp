@@ -1,0 +1,29 @@
+
+.leftwrap {
+    display: inline-block;
+    width: 500px;
+}
+input, textarea {
+    margin: 10px;
+    border: 2px solid black;
+    box-shadow: 1px 1px 1px grey;
+    vertical-align: middle;
+}
+.rightwrap {
+    display: inline-block;
+    vertical-align: top;
+    width: 400px;
+}
+.contact {
+    border: 2px solid black;
+    height:180px;
+    vertical-align: top;
+    width: 400px;
+    margin: 5px;
+    text-align: center;
+}
+.form {
+    border: 2px solid black;
+    width: 400px;
+
+}

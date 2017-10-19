@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="users.css">
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $('form').submit(function(){
+                var form_info = "<tr><td>"+$('input[name="first_name"]').val()+"</td>";
+                 form_info += "<td>"+$('input[name="last_name"]').val()+"</td>";
+                 form_info += "<td>"+$('input[name="email_address"]').val()+"</td>";
+                 form_info += "<td>"+$('input[name="phone_num"]').val()+"</td></tr>"
+
+             $('tbody').append(form_info)
+
+             return false
+            })
+
+            
+        })
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email Address</th>
+            <th>Contact #</th>
+        </tr>
+    </table>
+    <h1>Add Users</h1>
+    <hr>
+    <form>
+        First Name:<input type="text" name="first_name" placeholder="First Name">
+        Last Name:<input type="text" name="last_name" placeholder="Last Name">
+        Email Address:<input type="text" name="email_address" placeholder="Email Address">
+        Contact No.:<input type="text" name="phone_num" placeholder="Phone #">
+        <input type="submit" value="Add User">
+    </form>
+    
+</body>
+</html>

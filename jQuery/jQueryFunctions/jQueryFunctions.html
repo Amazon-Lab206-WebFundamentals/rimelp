@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .border {
+            border: solid 5px black;
+        }
+    </style>
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.hide').click(function(){
+                $('img').hide();
+            })
+
+            $('.show').click(function(){
+                $('img').show()
+            })
+
+            $('.toggle').click(function(){
+                $('img').toggle()
+            })
+
+            $('.slidedown').click(function(){
+                $('img').slideDown()
+            })
+
+            $('.slideup').click(function(){
+                $('img').slideUp()
+            })
+
+            $('.slidetoggle').click(function(){
+                $('img').slideToggle()
+            })
+
+            $('.fadeout').click(function(){
+                $('img').fadeOut()
+            })
+
+            $('.fadein').click(function(){
+                $('img').fadeIn()
+            })
+
+            $('.addclass').click(function(){
+                $('img').addClass('border')
+            })
+
+            $('.before').click(function(){
+                $('img').before('<p>My name is Yoda and I am a French Bulldog</p>')
+            })
+
+            $('.after').click(function(){
+                $('img').after('<p>I like treats and sleeping and treats and treats</p>')
+            })
+
+            $('.append').click(function(){
+                $('h1').append(' Have Fun Clicking!')
+            })
+
+            $('.html').click(function(){
+                $('h1').html('Having Lots of Fun with Buttons and jQuery.')
+            })
+
+            $('.attr').click(function(){
+                $('img').attr('width', '700')
+            })
+
+            $('.val').click(function(){
+                $('input').val('This is an Input Field')
+            })
+
+            $('.text').click(function(){
+                $('.text').text('New Button Text!')
+            })
+        });
+    </script>
+</head>
+<body>
+    <h1>Use the Buttons to Manipulate the Image</h1>
+    <button class="hide">Hide</button>
+    <button class="show">Show</button>
+    <button class="toggle">Toggle</button>
+    <button class="slidedown">Slide Down</button>
+    <button class="slideup">Slide Up</button>
+    <button class="slidetoggle">Slide Toggle</button>
+    <button class="fadein">Fade In</button>
+    <button class="fadeout">Fade Out</button>
+    <button class="addclass">Add Border Class</button>
+    <button class="before">Add Info Before Image</button>
+    <button class="after">Add Info After Image</button>
+    <button class="append">Append the Header</button>
+    <button class="html">Replace Header HTML</button>
+    <button class="attr">Change Image Attribute</button>
+    <button class="val">Add Input Value</button>
+    <button class="text">Add Text to Button</button>
+    <br><img src="Yoda.jpg" alt="Photo of Yoda the Frenchie" width="500"><br>
+    <input type="text">
+</body>
+</html>

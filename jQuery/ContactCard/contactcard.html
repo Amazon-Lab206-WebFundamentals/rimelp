@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Codingdojo contact page</title>
+    <link rel="stylesheet" type="text/css" href="cc.css">
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(document).on('submit', 'form', function(){
+            var contact = "<div class='contact'><h1>"+$('input[name="first_name"]').val()+"</h1><p>Click for description!</p></div>";
+            $(".rightwrap").append(contact);
+            return false
+        })
+        
+        })
+</script>
+</head>
+<body>
+    <div class="leftwrap">
+        <div class="form">
+            <form>
+                First Name: <input type="text" name="first_name"><br>
+                Last Name: <input type="text" name="last_name"><br>
+                Description: <textarea name="description">Enter description...</textarea><br>
+                <input type="submit" value="Add User">
+            </form>
+        </div>  
+    </div>
+    <div class="rightwrap"></div>
+</body>
+</html>
