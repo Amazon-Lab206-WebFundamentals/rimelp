@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src='jquery-3.2.1.min.js'></script> 
+    <script type="text/javascript">
+    $(document).ready(function() {
+    $('form').submit(function() {
+        // your code here (build up your url)
+        var input = $('input[name="search"]').val()
+        $.get("http://api.openweathermap.org/data/2.5/weather?q="+input+",us&units=imperial&&appid=bee3b92e04c5ab80e204082dfb3d2be3", function(res) {
+            var temp = "<h1>"+res.name+"</h1>"
+            temp += "<h3>Temperature: "+ Math.floor(res.main.temp)+" Degrees</h3>"
+                
+        $('div').html(temp)
+        }, 'json');
+        // don't forget to return false so the page doesn't refresh
+        return false;
+    });
+});
+</script>
+</head>
+<body>
+    <form>
+        <input type="text" name="search" placeholder="City">
+        <input type="submit" value="Search Weather">
+    </form>
+    <div></div>
+</body>
+</html>

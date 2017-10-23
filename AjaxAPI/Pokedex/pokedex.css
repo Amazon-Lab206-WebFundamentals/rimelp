@@ -1,0 +1,21 @@
+#wrapper{
+    width:1000px
+}
+
+.left {
+    display: inline-block;
+    width: 700px;
+}
+.right {
+    display: inline-block;
+    width: 250px;
+    border: 5px solid black;
+    vertical-align: top;
+    text-align: center;
+    box-shadow: 2px 2px 2px grey;
+    height: 500px;
+}
+ul {
+    list-style-position: inside;
+   align-content: center;
+}

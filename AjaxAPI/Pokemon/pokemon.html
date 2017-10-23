@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src='jquery-3.2.1.min.js'></script> 
+    <script type="text/javascript">
+      $(document).ready(function(){
+        for (var i = 1; i < 152; i++){
+          var x = i;
+        $.get("https://pokeapi.co/api/v2/pokemon/"+x+"/", function(pokemon){
+          $('body').append("<img class="+pokemon.id+" src='"+pokemon.sprites.front_default+"'>")
+        
+        }, 'json');
+      }
+      })
+</script>
+</head>
+<body>
+    
+</body>
+</html>
+

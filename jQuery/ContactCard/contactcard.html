@@ -10,9 +10,14 @@
 <script type="text/javascript">
     $(document).ready(function(){
         $(document).on('submit', 'form', function(){
-            var contact = "<div class='contact'><h1>"+$('input[name="first_name"]').val()+"</h1><p>Click for description!</p></div>";
+            var contact = "<div class='contact'><h1>"+$('input[name="first_name"]').val()+"</h1><p>Click for description!</p><p class='back'>"+$('textarea[name="description"]').val()+"</p></div>";
             $(".rightwrap").append(contact);
             return false
+        })
+
+        $(document).on('click', '.contact', function(){
+            $(this).children().toggle()
+            
         })
         
         })
@@ -21,10 +26,12 @@
 <body>
     <div class="leftwrap">
         <div class="form">
+            <h1>Contact Info</h1>
+            <hr>
             <form>
-                First Name: <input type="text" name="first_name"><br>
-                Last Name: <input type="text" name="last_name"><br>
-                Description: <textarea name="description">Enter description...</textarea><br>
+                First Name: <input type="text" name="first_name" temp=""><br>
+                Last Name: <input type="text" name="last_name" temp=""><br>
+                Description: <textarea name="description" temp= "">Enter description...</textarea><br>
                 <input type="submit" value="Add User">
             </form>
         </div>  
